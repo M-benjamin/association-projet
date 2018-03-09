@@ -4,6 +4,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
+// Initialize database
+const db = require('./models');
+
 var index = require('./routes/index');
 
 var app = express();
